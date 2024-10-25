@@ -22,7 +22,7 @@ var (
 
 func init() { log.SetFlags(log.Lshortfile) }
 func main() {
-	if len(os.Args) <= 2 {
+	if len(os.Args) < 2 {
 		log.Fatal("unexpeted arguments number")
 	}
 	text := strings.Join(os.Args[1:], " ")
