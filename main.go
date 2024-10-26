@@ -44,7 +44,7 @@ func main() {
 }
 
 func retrieve(text, data string) string {
-	request := ycCompletitionRequest{ModelURI: fmt.Sprintf("gpt://%s/yandexgpt-lite", YCFolderID)}
+	request := ycCompletitionRequest{ModelURI: fmt.Sprintf("gpt://%s/yandexgpt/latest", YCFolderID)}
 	request.CompletionOptions.Temperature = .6
 	request.CompletionOptions.MaxTokens = "2000"
 	request.Messages = append(request.Messages,
